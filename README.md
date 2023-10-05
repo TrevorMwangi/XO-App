@@ -1,2 +1,2 @@
-XO game, enjoy!
+XO game written with Javascript, enjoy!
 
