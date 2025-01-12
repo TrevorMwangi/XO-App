@@ -1,101 +1,64 @@
-body{
-    background: rgb(240, 240, 245);
-    color: dimgray;
-    font-family: serif;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
 }
 
-h1{
-    font-size: 2rem;
+h1 {
+    color: #333;
 }
 
-#container{
-    margin: 5% auto;
+#scoreboard {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    text-align: center;
-}
-
-.box{
     display: inline-block;
-    border: 1px solid gray;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0;
+    text-align: left;
 }
 
-span{
-    position: absolute;
-    font-size: 75px;
-    font-family: sans-serif;
-    text-align: center;
-    height: 75px;
-    width: 75px;
-    padding: 0;
-    margin: 5px;
-    margin-left: -35px;
+#scoreboard h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #222;
 }
 
-.top{
-    border-top: none;
+#scoreboard p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
 }
 
-.bottom{
-    border-bottom: none;
+#container {
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
-.left{
-    border-left: none;
+.block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.right{
-    border-right: none;
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: #eaeaea;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2em;
+    color: #333;
 }
 
-.alert{
-    height: 75px;
-    width: 125px;
-    display: inline-block;
-    background: ghostwhite;
-    position: relative;
-    z-index: 10;
-    margin-top: -50%;
-    border-radius: 20px;
-    box-shadow: 0 0 75px 2px dimgray;
-    animation: larger 0.5s;
-    animation-fill-mode: forwards;
-    box-sizing: content-box;
-    padding: 30px;
-    bottom: 50px;
-    top: 0;
-}
-
-button{
-    background: dimgray;
-    border-radius: 2px;
-    color: ghostwhite;
-    border: none;
-    outline: none;
-}
-
-button:focus{
-    background: silver;
-}
-
-.activeBox{
-    background: silver;
-}
-
-@keyframes larger{
-    from{
-        height: 75px;
-        width: 125px;
-    }
-
-    to{
-        height: 100px;
-        width: 250px;
-    }
-
+.box span {
+    user-select: none;
 }
